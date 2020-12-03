@@ -1,5 +1,7 @@
 plugins {
     id 'com.android.library'
+    id 'com.jfrog.bintray'
+    id 'maven-publish'
 }
 
 android {
@@ -37,6 +39,7 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
 }
 
+/*
 apply plugin: "guru.stefma.bintrayrelease"
 
 version = "0.0.1" //项目的版本号
@@ -54,4 +57,9 @@ tasks.withType(Javadoc) {//防止编码问题
     options.addStringOption('Xdoclint:none', '-quiet')
     options.addStringOption('encoding', 'UTF-8')
     options.addStringOption('charSet', 'UTF-8')
-}
+}*/
+
+//切记：以下代码必须放在子module的build.gradle文件末尾
+apply from: 'bintray-config.gradle'
+apply from: 'installv1.gradle'
+apply from: 'bintrayv1.gradle'

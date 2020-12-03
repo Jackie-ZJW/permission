@@ -1,0 +1,38 @@
+//这是一个将项目打包成arr，并生成项目的pom.xml文件的脚本，这些文件都是要上传到bintray网站上你的仓库中去的
+apply plugin: 'com.github.dcendents.android-maven'
+
+group = publishedGroupId //开源库的 groupId
+
+install {
+    repositories.mavenInstaller { // This generates POM.xml with proper parameters
+        pom {
+            project {
+                packaging 'aar'//将项目打包成 aar
+                groupId publishedGroupId
+                artifactId artifact  // Add your description here
+                name libraryName
+                description libraryDescription
+                url siteUrl // Set your license
+                licenses {
+                    license {
+                        name licenseName
+                        url licenseUrl
+                    }
+                }
+                developers {
+                    developer {
+                        id developerId
+                        name developerName
+                        email developerEmail
+                    }
+                }
+                scm {
+                    connection gitUrl
+                    developerConnection gitUrl
+                    url siteUrl
+
+                }
+            }
+        }
+    }
+}
