@@ -1,4 +1,4 @@
-package com.example.quickpermission;
+package com.jackiezjw.quickpermission;
 
 //import android.support.annotation.NonNull;
 
