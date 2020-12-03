@@ -1,4 +1,4 @@
-package com.jackiezjw.quickpermission;
+package com.example.quickpermission;
 
 import android.app.Activity;
 import android.app.AlertDialog;

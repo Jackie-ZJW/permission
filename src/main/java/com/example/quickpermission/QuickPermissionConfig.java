@@ -1,4 +1,4 @@
-package com.jackiezjw.quickpermission;
+package com.example.quickpermission;
 
 /**
  * @author Zyq
