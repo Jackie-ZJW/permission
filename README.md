@@ -1,5 +1,5 @@
 # QuickPermission
-README: 中文 | English
+README: [中文](https://github.com/Jackie-ZJW/quickpermission/blob/master/README.md) | [English](https://github.com/Jackie-ZJW/quickpermission/blob/master/README-en.md)
 
 ## QuickPermission简介
 这个是一个方便Android中权限管理的库，它使得申请权限和业务代码逻辑简单分离，不去关心权限的申请和回调。
