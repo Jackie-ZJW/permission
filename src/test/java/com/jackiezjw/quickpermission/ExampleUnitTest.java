@@ -1,4 +1,4 @@
-package com.example.quickpermission;
+package com.jackiezjw.quickpermission;
 
 import org.junit.Test;
 
