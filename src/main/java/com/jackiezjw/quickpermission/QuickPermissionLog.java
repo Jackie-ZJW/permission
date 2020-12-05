@@ -1,4 +1,4 @@
-package com.example.quickpermission;
+package com.jackiezjw.quickpermission;
 
 import android.text.TextUtils;
 import android.util.Log;
