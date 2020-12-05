@@ -48,7 +48,7 @@ bintray {
         repo = bintrayRepo
         name = bintrayName
         //ZJW add at 20201203
-        userOrg = userOrg //当前库在bintray上所属的组织名称
+        userOrg = userOrganiztion //当前库在bintray上所属的组织名称
         desc = libraryDescription
         websiteUrl = siteUrl
         vcsUrl = gitUrl

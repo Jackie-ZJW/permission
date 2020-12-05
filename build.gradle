@@ -39,9 +39,11 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
 }
 
-apply plugin: "guru.stefma.bintrayrelease"
+//ZJW 此部分代码是使用guru.stefma.bintrayrelease插件进行打包和上传，该插件需要在根目录的build.gradle文件中添加如下库路径：
+// classpath "guru.stefma.bintrayrelease:bintrayrelease:1.0.0"
+/*apply plugin: "guru.stefma.bintrayrelease"
 
-version = "0.0.3" //项目的版本号
+version = "0.0.4" //项目的版本号
 group = "com.example.quickpermission" //项目的包名
 publish {
     //userOrg = 'ZJW19890602' //bintray注册的用户名
@@ -56,9 +58,9 @@ tasks.withType(Javadoc) {//防止编码问题
     options.addStringOption('Xdoclint:none', '-quiet')
     options.addStringOption('encoding', 'UTF-8')
     options.addStringOption('charSet', 'UTF-8')
-}
+}*/
 
 //切记：以下代码必须放在子module的build.gradle文件末尾
-//apply from: 'bintray-config.gradle'
-//apply from: 'installv1.gradle'
-//apply from: 'bintrayv1.gradle'
+apply from: 'bintray-config.gradle'
+apply from: 'installv1.gradle'
+apply from: 'bintrayv1.gradle'
