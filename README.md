@@ -1,4 +1,5 @@
 # QuickPermission
+[ ![Download](https://api.bintray.com/packages/19890602/ZJW_Repository_1/quickpermission/images/download.svg?version=0.0.1) ](https://bintray.com/19890602/ZJW_Repository_1/quickpermission/0.0.1/link)  
 README: [中文](https://github.com/Jackie-ZJW/quickpermission/blob/master/README.md) | [English](https://github.com/Jackie-ZJW/quickpermission/blob/master/README-en.md)
 
 ## 目录
