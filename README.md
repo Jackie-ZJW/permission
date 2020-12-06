@@ -21,19 +21,28 @@ README: [中文](https://github.com/Jackie-ZJW/quickpermission/blob/master/READM
 ## 集成方法
  第一步. 添加Jcenter 将其添加到根build.gradle中.目前Android Studio默认就会添加Jcenter，如果没用添加的话就自己手动添加下。
 ```
+buildscript {
+    repositories {
+        ...
+        jcenter()
+    }
+    ...
+}
+
 allprojects {
 		repositories {
 			...
 			jcenter()
 		}
-	}
+}
 ```
 
  第二步. 添加依赖
 ```
+ 在app目录下的build.gradle文件中添加如下引用：
 dependencies {
-	        implementation 'com.jackiezjw.quickpermission:quickpermission:0.0.2'
-	}
+   implementation 'com.jackiezjw.quickpermission:quickpermission:0.0.1'
+}
 ```
 
  第三步. 调用 onRequestPermissionsResult().
@@ -64,7 +73,7 @@ dependencies {
 
 ### 3.需要权限的结果
 如果你需要知道申请权限后用户的选择结果，同时去执行自己的方法myVoid(),
-那么在onPermissionsAccess中去做已经成功获取到权限后需要做的事情就可以了，在onPermissionsDismiss是用户拒绝了权限的反馈。
+那么在onPermissionsAccess中去做已经成功获取到权限后需要做的事情就可以了，在onPermissionsDismiss是用户拒绝了权限后的回调，可以在其中添加权限被用户拒绝后的相应处理动作。
 ```
  QuickPermission.build()
                 .mRequestCode(RC_CODE_CALLPHONE)
