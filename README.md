@@ -42,7 +42,7 @@ allprojects {
 ```
  在app目录下的build.gradle文件中添加如下引用：
 dependencies {
-   implementation 'com.jackiezjw.quickpermission:quickpermission:0.0.1'
+   implementation 'com.jackiezjw.quickpermission:quickpermission:0.0.5'
 }
 ```
 
